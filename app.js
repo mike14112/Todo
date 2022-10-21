@@ -35,6 +35,7 @@ document.addEventListener("keydown", (e) => {
     list.innerHTML += `<ul><li class ="task-list">  <div><input type="checkbox" class = "checkbox"></div>
     <div><span>${inputTodo.value} </span></div>
   <div> <button class ="btn-remove">x</button></div></li> </ul>`;
+  inputTodo.value  = ''
     checkingComplete();
   }
 });
