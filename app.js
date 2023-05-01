@@ -14,12 +14,16 @@ const App = {
         addNewNote(){
         if(this.inputValue !== ''){
             this.notes.push(this.inputValue)
+            this.inputValue = ''
+
         }
      
         }  ,
         deleteNote(index){
             this.notes.splice(index, 1)
-            this.inputValue = ''
+        },
+        key(e){
+console.log(e.keypress)
         }
       }
 
